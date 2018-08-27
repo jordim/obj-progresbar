@@ -339,6 +339,19 @@
     }
 }
 
+- (void) setBarAlpha:(float) alpha {
+    
+    if(alpha < 0) alpha = 0;
+    if(alpha > 1) alpha = 1;
+    self.alpha = alpha;
+}
+- (void) setProgresBarAlpha:(float) alpha {
+    
+    if(alpha < 0) alpha = 0;
+    if(alpha > 1) alpha = 1;
+    self.bar.alpha = alpha;
+}
+
 - (void) updateProgressBar:(NSTimer *) sender {
     
     NSDictionary *data = sender.userInfo;

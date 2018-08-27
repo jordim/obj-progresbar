@@ -39,6 +39,8 @@
 - (void) setBarProgres:(float) progres;
 - (void) setBarHeight:(int) height;
 - (void) setProgresBarHeight:(int) height;
+- (void) setBarAlpha:(float) alpha;
+- (void) setProgresBarAlpha:(float) alpha;
 
 - (void) hideMessage:(BOOL) message;
 - (void) hidePercentage:(BOOL) percentage;
