@@ -335,7 +335,8 @@
         if(progres > 100.0f) {
             progres = 100.0f;
         }
-        self.constraint_width.constant = progres;
+        float bar_width = self.bar.frame.size.width;
+        self.constraint_width.constant = (progres/100) * bar_width;
     }
 }
 
